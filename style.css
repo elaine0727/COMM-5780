@@ -1,0 +1,105 @@
+
+/* Basic settings */
+body {
+   background-color: #F8F5F9;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Top section */
+
+header {
+    background-color: #ffffff;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    color: #B9A0DC;
+    font-size: 28px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #71627F;
+    text-decoration: none;
+    margin-left: 0;
+}
+
+nav a:hover {
+    color: #A88ACF;
+}
+
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Content sections */
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+/* Section titles */
+h2 {
+    color: #B9A0DC;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    color: #A88ACF;
+}
+
+
+#daily-life img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Daily life layout */
+.daily-life-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.daily-life-content img {
+    width: 250px;
+    max-width: 40%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.daily-life-text {
+    flex: 1;
+}
+
+.daily-life-text h3 {
+    color: #71627F;
+    font-size: 18px;
+}
+
