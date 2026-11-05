@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elaine | Digital Media Journal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <a class="logo" href="#" id="homeButton"><b>Y</b> ELAINE / DIGITAL MEDIA</a>
+    <nav class="page-nav">
+      <button id="indexButton" class="active" type="button">INDEX</button>
+      <button id="menuButton" type="button">MENU</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="index-page" id="indexPage">
+      <p class="index-note">ELAINE / INTERACTIVE PORTFOLIO</p>
+      <div class="orbit-area">
+        <div class="orbit-ring ring-one"></div>
+        <div class="orbit-ring ring-two"></div>
+        <div class="orbit-ring ring-three"></div>
+        <div class="orbit-axis axis-a"></div>
+        <div class="orbit-axis axis-b"></div>
+        <div class="orbit-axis axis-c"></div>
+        <div class="orbit-center">Y</div>
+        <span class="category-label label-assignments">ASSIGNMENTS</span>
+        <span class="category-label label-weekly">WEEKLY FEEDBACK</span>
+        <span class="category-label label-daily">DAILY LIFE</span>
+        <div id="orbitPoints"></div>
+      </div>
+      <button class="enter-menu" id="enterMenu" type="button">↑ ENTER MENU</button>
+      <aside class="preview" id="preview">
+        <button id="closePreview" type="button" aria-label="Close preview">×</button>
+        <h2 id="previewTitle"></h2>
+        <p id="previewText"></p>
+      </aside>
+    </section>
+
+    <section class="menu-page hidden" id="menuPage">
+      <div class="menu-intro">
+        <p>ELAINE / MA DIGITAL MEDIA</p>
+        <h1>Explore the <em>work.</em></h1>
+      </div>
+      <div id="menuSections"></div>
+      <button class="export-site" id="exportSite" type="button">↓ EXPORT CONTENT FOR GITHUB</button>
+      <button class="back-to-index" id="backToIndex" type="button">↑ BACK TO INDEX</button>
+    </section>
+  </main>
+
+  <div class="editor-background" id="editorBackground">
+    <div class="editor-box" role="dialog" aria-modal="true" aria-labelledby="editorTitle">
+      <button class="editor-close" id="closeEditor" type="button">×</button>
+      <p class="editor-category" id="editorCategory"></p>
+      <input id="editorTitle" type="text" aria-label="Entry title">
+      <textarea id="editorText" aria-label="Entry text"></textarea>
+      <div class="editor-actions">
+        <button class="add-photo" id="addPhoto" type="button">+ ADD PHOTOS</button>
+        <button id="doneButton" type="button">DONE</button>
+      </div>
+      <div class="photo-list" id="photoList"></div>
+    </div>
+  </div>
+  <input class="photo-input" id="photoInput" type="file" accept="image/*" multiple>
+  <div class="image-viewer" id="imageViewer">
+    <button id="closeImage" type="button" aria-label="Close image">×</button>
+    <img id="largeImage" alt="Large preview">
+  </div>
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+  <script src="publish.js"></script>
+</body>
+</html>
